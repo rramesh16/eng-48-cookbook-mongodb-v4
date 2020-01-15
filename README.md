@@ -1,4 +1,4 @@
-# mongodb-v4
+# Mongodb-v4
 
-TODO: Enter the cookbook description here.
+Recipe to install and configure MongoDB version 4 on Ubuntu 18.4
 
