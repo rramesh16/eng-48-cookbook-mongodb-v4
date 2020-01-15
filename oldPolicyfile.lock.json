@@ -1,0 +1,72 @@
+{
+  "revision_id": "93e1c6f7ce02c81021ab6f3f1b275137c92359b213fe0b50df0657f85382469a",
+  "name": "mongodb-v4",
+  "run_list": [
+    "recipe[mongodb-v4::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "apt": {
+      "version": "7.2.0",
+      "identifier": "42f46ee8ced265bcc92c3bf40c9f7ceb3c443df1",
+      "dotted_decimal_identifier": "18846105652351589.53138487443197087.137349770264049",
+      "cache_key": "apt-7.2.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/apt/versions/7.2.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/apt/versions/7.2.0/download",
+        "version": "7.2.0"
+      }
+    },
+    "mongodb-v4": {
+      "version": "0.1.0",
+      "identifier": "fb589ec3eeabb3375872bbf1d5906e40beb90668",
+      "dotted_decimal_identifier": "70747658069650355.15578373521790352.121224356759144",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": null,
+        "revision": "d680714ef2502c5491e5b7902f69b92a5e746d48",
+        "working_tree_clean": false,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "."
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "apt",
+        "= 7.2.0"
+      ],
+      [
+        "mongodb-v4",
+        ">= 0.0.0"
+      ]
+    ],
+    "dependencies": {
+      "apt (7.2.0)": [
+
+      ],
+      "mongodb-v4 (0.1.0)": [
+        [
+          "apt",
+          ">= 0.0.0"
+        ]
+      ]
+    }
+  }
+}
